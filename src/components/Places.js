@@ -1,8 +1,11 @@
 import "./Places.css";
 import Place from "./Place";
 
-function Places(){
+function Places(props)
+{
 <div>
+  
+
 
     <Place/>
     <Place/>
