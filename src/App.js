@@ -1,9 +1,7 @@
 import React,{ useState } from "react";
 import Places from "./components/Places";
 import data from "./data";
-
-
-
+import Refresh from "./components/Refresh";
 
 
 
@@ -20,12 +18,17 @@ function removeitem(id)
 
 }
 
-if(Data.length!==0)
+function reset()
+{
+  setdata(data);
+}
+
+if(Data.length===0)
 {
   return(
 <div>
     
-  <div onClick={ ()=>setdata(data)}> Refresh</div>
+ <Refresh reset={reset}/>
 
   </div> );
 
