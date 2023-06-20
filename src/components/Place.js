@@ -1,6 +1,8 @@
 import "./Place.css";
-function Place()
+function Place(props)
 {
+
+
 
 }
 export default Place;
