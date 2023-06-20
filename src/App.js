@@ -6,6 +6,7 @@ import data from "./data";
 
 
 
+
 const App = () => {
 
   const  [Data,setdata] = useState(data);
@@ -19,10 +20,14 @@ function removeitem(id)
 
 }
 
+if(Data.length===0)
+{
+  return(
+  <div onClick={ ()=>setdata(data)}> Refresh</div>
+  );
+
+}
   
-
-
-
   return (
 
   <div>

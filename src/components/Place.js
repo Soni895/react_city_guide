@@ -17,7 +17,7 @@ function readmodehandler()
 <div>
 
 <img src={image}></img>
-<h4>{price}</h4>
+<h4 className=" bg-slate-600">{price}</h4>
 <h4>{name}</h4>
 <info>{description}</info>
 <span onClick={readmodehandler}>
