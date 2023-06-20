@@ -20,11 +20,14 @@ function removeitem(id)
 
 }
 
-if(Data.length===0)
+if(Data.length!==0)
 {
   return(
+<div>
+    
   <div onClick={ ()=>setdata(data)}> Refresh</div>
-  );
+
+  </div> );
 
 }
   
