@@ -6,7 +6,7 @@ import Places from "./components/Places";
 
 
 
-const App = (props) => {
+const App = () => {
   const filterData = [
     {
       id: "1",
@@ -38,7 +38,7 @@ const App = (props) => {
   <div>
   <h1>Plan with Darshan Soni</h1>
 
-  <Places data={data} />
+  <Places data={data} name="darshan" />
 
 
   </div>);
