@@ -14,18 +14,18 @@ function readmodehandler()
 }
 
     return(
-<div>
+<div className="place">
 
-<img src={image}></img>
-<h4 className=" bg-slate-600">{price}</h4>
-<h4>{name}</h4>
-<info>{description}</info>
-<span onClick={readmodehandler}>
+<img src={image} className="image"></img>
+<h4 className=" tour-info">{price}</h4>
+<h4 className="tour-price">{name}</h4>
+<info className="description">{description}</info>
+<span className="readmore" onClick={readmodehandler}>
     {
         readmore?"ReadMore":"Show less"
     }
 </span>
-<button onClick={()=>removeitem(id)}>not interested</button>
+<button className="remove-item" onClick={()=>removeitem(id)}>not interested</button>
 
 </div>
    );

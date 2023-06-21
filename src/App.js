@@ -31,8 +31,8 @@ if(Data.length===0)
   
   return (
 
-  <div>
-  <h1>Plan with Darshan Soni</h1>
+  <div className="app">
+  
 
   <Places data={Data} removeitem={removeitem}  />
 

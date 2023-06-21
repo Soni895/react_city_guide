@@ -5,17 +5,20 @@ function Places({data ,removeitem})
 {
 
 return(
-
-    <div>
+    <div className="containor">
+    <h1 className="title">Plan with Darshan Soni</h1>
+    <div className="places">
     {
-      
+        
 
-        data.map((data)=><Place{...data} removeitem={removeitem}/> ) 
+      data.map((data)=><Place{...data} removeitem={removeitem}/> ) 
        /* data.map((data,removeitem)=>place)  */
      
     }
 
     </div>
+    </div>
+
 );
     
 // function place(data,removeitem){
