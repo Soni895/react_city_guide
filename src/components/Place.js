@@ -1,16 +1,18 @@
 import "./Place.css";
 import { useState } from "react";
 function Place({name,id,image,info,price,removeitem})
-{
-const [readmore,setreadmore]=useState(false);
-const  content=readmore? info:info.substring(0,200)+"...";
+{const [readmore,setreadmore]=useState(true);
+ let  content=readmore? info.substring(0,200)+"...":info;
 const [description,set_description]=useState(content);
+
 
 
 function readmodehandler()
 {
+    
     setreadmore(!readmore);
     set_description(content);
+   
 }
 
     return(
@@ -29,7 +31,7 @@ function readmodehandler()
     }
 </span></info>
 
-<button className="remove-item bg-slate-800 px-5 py-3 mr-6 hover:bg-slate-600 text-white mt-5 rounded border-purple-500 " onClick={()=>removeitem(id)}>not interested</button>
+<button className="remove-item bg-slate-800  px-28 transition-all duration-200 py-3 mr-6 hover:bg-slate-600 text-white mt-5 rounded-md tracking-wider	  " onClick={()=>removeitem(id)}>not interested</button>
 
 </div>
    );
