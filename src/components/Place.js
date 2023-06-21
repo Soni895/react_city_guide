@@ -18,7 +18,7 @@ function readmodehandler()
 
 <img src={image} className="image"></img>
 <div className="info mr-72 mt-5 font-extrabold text-lg   tracking-widest	 leading-4 flex flex-col gap-3"lex-col items-sta>
-<h4 className=" tour-info ">{price}</h4>
+<h4 className=" tour-info  text-green-400">{price}</h4>
 <h4 className="tour-price">{name}</h4>
 </div>
 
