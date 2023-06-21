@@ -15,7 +15,6 @@ return(
        /* data.map((data,removeitem)=>place)  */
      
     }
-
     </div>
     </div>
 

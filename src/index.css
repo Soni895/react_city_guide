@@ -2,17 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-.spinner {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background: conic-gradient(#0000 10%, #22223b);
-    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
-    animation: spinner-zp9dbg 1s infinite linear;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+
+}
+.title
+{ 
+  text-align: center; 
+    font-size: 3rem;
+    margin: 6vh;
+    border: 7px dashed red; 
+    border-radius: 20px;
+    padding: 1vh 5vw ;
 }
 
-@keyframes spinner-zp9dbg {
-    to {
-        transform: rotate(1turn);
-    }
+.containor
+{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   
+}
+.places
+{
+    display: grid;
+    
+   grid-template-columns: repeat(3,1fr);
+   grid-auto-rows:auto;
+    /* max-width: 1300px ; */
+    margin: 0 auto;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.place
+{
+    width: 400px;
+    height: max-content;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 1rem;
+    align-items: center;
+    box-shadow: rgb(0,0,0,0.24) 0px 3px 8px;
+    
+}
+
+.image
+{
+   width: 380px;
+   aspect-ratio: 1/1;
+   object-fit: cover; 
 }
