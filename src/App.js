@@ -6,16 +6,12 @@ import Refresh from "./components/Refresh";
 
 
 const App = () => {
-
   const  [Data,setdata] = useState(data);
-
-
-
-function removeitem(id)
-{
+  function removeitem(id)
+{  
    const newdata=Data.filter(place=> place.id!==id);
     setdata(newdata);
-
+   
 }
 
 function reset()
@@ -26,11 +22,10 @@ function reset()
 if(Data.length===0)
 {
   return(
-<div>
     
  <Refresh reset={reset}/>
 
-  </div> );
+  );
 
 }
   
