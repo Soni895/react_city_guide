@@ -10,7 +10,6 @@ return(
     <div className="places">
     {
         
-
       data.map((data)=><Place{...data} removeitem={removeitem}/> ) 
        /* data.map((data,removeitem)=>place)  */
      
